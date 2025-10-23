@@ -1,0 +1,165 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right,rgb(223, 120, 161), rgb(233, 195, 205),rgb(252, 72, 156));
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.box{
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 5px;
+}
+#title{
+    text-align: center;
+    color: rgb(226, 11, 126);
+    margin-top: 0;
+}
+.btn{
+    display: inline-block;
+    background-color: rgb(171, 27, 82);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.5s;
+    transition: transform 0.5s;
+}
+.btn:hover{
+    background-color: rgb(87, 7, 43);
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+.btn:active{
+    background-color: rgb(255, 0, 132);
+    transform: scale(1);
+    transition: transform 0.1s;
+}
+
+#header{
+    background-color: rgb(104, 20, 51);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-radius: 4px;
+}
+#header h1{
+    margin: 0;
+    font-size: 28px;
+}
+#header p{
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+#menu{
+    background-color: rgb(104, 20, 51);
+    border-radius: 4px;
+    margin: 10px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+#menu ul li{
+    position: relative;
+}
+#menu ul li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;-
+}
+#menu ul li a:hover{
+    background-color: rgb(148, 12, 75);
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    border-radius: 4px;
+}
+#menu ul li ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(104, 20, 55);
+    border-radius: 4px;
+    min-width: 150px;
+    z-index: 1000;
+}
+#menu ul li:hover > ul{
+    display: block;
+
+}
+#menu ul li ul li a{
+    padding: 10px 10px;
+}
+#menu ul li ul li a:hover{
+    background-color: rgb(172, 12, 76);
+}
+#menu ul li ul li ul{
+    top: 0;
+    left: 100%;
+}
+#main{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+#icon{
+    width: 40px;
+    height: 40x;
+    border-radius: 50%;
+    margin-top: 1px;
+    margin-left: 5px;
+    object-fit: cover;
+    border: 3px solid rgb(0, 0, 0);
+}
+#icon:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+#footer{
+    background-color: rgb(104, 20, 54);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+}
+#image{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: 3px solid rgb(41, 41, 41);
+    display: block;
+    margin-left: 0;
+    margin-top: 0px;
+    margin-right: 0;
+   
+}
+#image:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+    border: 3px solid rgb(0, 0, 0);
+}
+#avatar{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 5px;
+    object-fit: cover;
+}
